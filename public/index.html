@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <script src="bundle.js" async></script>
+</head>
+<body>
+  <h1>Carousel effect, JS, HTML and CSS... and StimulusJS</h1>
+
+  <div class="carousel_section" data-controller="carousel">
+    <div class="carousel forward" data-target="carousel.preview">
+
+      <div data-id="image-1" class="image is-active" data-target="carousel.imageContainer">
+        <img
+          src="https://cms-assets.tutsplus.com/uploads/users/30/posts/30547/preview_image/stim.png"
+          height="200px"
+        />
+      </div>
+
+      <div data-id="image-2" class="image is-next-active" data-target="carousel.imageContainer">
+        <img
+          src="https://as2.ftcdn.net/jpg/00/94/77/13/500_F_94771323_wexstXWTWx7H4oKCAgQAcm4PalMKYwzL.jpg"
+          alt=""
+        />
+      </div>
+
+      <div data-id="image-3" class="image" data-target="carousel.imageContainer">
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/I/41WqLv9tpxL._UX500_.jpg"
+          alt=""
+        />
+      </div>
+
+      <div data-id="image-4" class="image" data-target="carousel.imageContainer">
+        <img
+          src="https://www.topinteractiveagencies.com/wp-content/uploads/2017/06/Vintage-Agency-Logo-Ukraine.png"
+          alt=""
+        />
+      </div>
+
+      <div data-id="image-5" class="image is-prev-active" data-target="carousel.imageContainer">
+        <img
+          src="https://i.pinimg.com/originals/c0/b4/eb/c0b4eb9c610e791e2f38a2cb91dc4812.jpg"
+          alt=""
+        />
+      </div>
+
+    </div>
+
+    <div class="button-group">
+      <button data-action="click->carousel#prev">Prev</button>
+      <button data-action="click->carousel#goto" data-id="1">1</button>
+      <button data-action="click->carousel#goto" data-id="2">2</button>
+      <button data-action="click->carousel#goto" data-id="3">3</button>
+      <button data-action="click->carousel#goto" data-id="4">4</button>
+      <button data-action="click->carousel#goto" data-id="5">5</button>
+      <button data-action="click->carousel#next">Next</button>
+    </div>
+  </div>
+</body>
+</html>
