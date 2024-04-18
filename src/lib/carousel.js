@@ -1,4 +1,4 @@
-export function createCarousel(initialstate || {}) {
+export function createCarousel(initialstate = {}) {
   const state = {
     images: {},
     totalImages: 0,
